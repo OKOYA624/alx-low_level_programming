@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main – Entry point for Betty Style
+* a program that prints the alphabet in lowercase, and then in uppercase,
 *
 * Return: Always 0 (success)
 */
