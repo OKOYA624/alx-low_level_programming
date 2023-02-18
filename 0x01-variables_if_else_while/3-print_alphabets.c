@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
-* main – Entry point
-* 
+* main – Entry point for Betty Style
+*
 * Return: Always 0 (success)
-*/ 
+*/
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
 				c++;
 			}
 		while
-			(d <= 'z') {
+			(d <= 'Z') {
 				putchar(d);
 				d++;
 			}
