@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- * main– Entry point
- *
- * Return: Always 0 (success)
- */
-
+* main - entry point
+* Return:0 if successfull
+*/
 int main(void)
 {
 		char c;
