@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* *
+/**
 * main – Entry point
-* 
+*
 * Return: Always 0 (success)
-*/ 
+*/
 
 int main(void)
 {
 	char c;
 
-	c = 'a' ;
+	c = 'a';
 	while
 		(c <= 'z') {
 			putchar(c);
@@ -20,6 +20,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-			
-					
-
