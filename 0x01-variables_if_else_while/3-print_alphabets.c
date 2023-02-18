@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
-* a program that prints the alphabet in lowercase, and then in uppercase,
-*
-* Return: Always 0 (success)
-*/
+ * a program that prints the alphabet in lowercase, and then in uppercase
+ * main – Entry point
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
