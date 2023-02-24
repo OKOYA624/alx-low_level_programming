@@ -1,24 +1,18 @@
 #include "main.h"
 
 /**
-* more_numbers - prints 0 to 14
-*
+* print_line - prints 0 to 14
+*@n: the number of '_'
 * Return: Always 0.
 */
-void more_numbers(void)
+void print_line(int n)
 {
-int num, a;
-for (a = 0; a <= 9; a++)
+int len;
+if (n > 0)
+{
+for (len = 0; len < n; len++)
+_putchar('_');
+}
+_putchar('\n');
 
-{
-for (num = 0; num <= 14; num ++)
-{
-if (num > 0)
-{
-_putchar((num / 10) + '0');
-}
-_putchar((num % 10) + '0';)
-}
-_pitchar('\n');
-}
 }
