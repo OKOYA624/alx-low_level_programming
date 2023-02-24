@@ -6,7 +6,8 @@
 int main(void)
 {
 int n;
-for (n = 1; n <= 100; n++)
+printf("1");
+for (n = 2; n <= 100; n++)
 {
 printf(" ");
 if (n % 3 == 0)
