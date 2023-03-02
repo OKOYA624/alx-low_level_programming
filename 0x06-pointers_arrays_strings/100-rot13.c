@@ -25,4 +25,4 @@ break;
 }
 }
 return (s);
-} =
+}
