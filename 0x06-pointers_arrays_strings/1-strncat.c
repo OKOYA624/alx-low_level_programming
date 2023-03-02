@@ -18,11 +18,11 @@ i++;
 }
 j = 0;
 while (j < n && src[j] != '\0')
-{d
-est[i] = src[j];
+{
+dest[i] = src[j];
 i++;
 j++;
 }
 dest[i] = '\0';
 return (dest);
-} =
+}
