@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-
 /**
 * print_all - prints anything based on the format string
 * @format: the format string
@@ -10,9 +9,7 @@ void print_all(const char * const format, ...)
 va_list args;
 unsigned int i = 0;
 char *str;
-
 va_start(args, format);
-
 while (format && format[i])
 {
 switch (format[i])
@@ -38,16 +35,12 @@ default:
 i++;
 continue;
 }
-
 if (format[i + 1] != '\0')
 {
 printf(", ");
 }
-
 i++;
 }
-
 va_end(args);
-
 printf("\n");
 }
