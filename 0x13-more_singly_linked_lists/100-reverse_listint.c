@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
 * reverse_listint - reversal
 * @head:it is a pointer to a pointer
