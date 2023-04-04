@@ -1,8 +1,7 @@
 #include "lists.h"
-
 /**
 * add_nodeint - addds a new node in list
-* @head: A pointer to a pointer 
+* @head: A pointer to a pointer
 * @n: The int that store a new node
 * Return:returns NULL if function fail
 *         Otherwise - a pointer to the new node.
