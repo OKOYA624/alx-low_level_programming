@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint - addds a new node in list
- * @head: A pointer to a pointer 
- * @n: The int that store a new node
- * Return:returns NULL if function fail
- *         Otherwise - a pointer to the new node.
- */
+* add_nodeint - addds a new node in list
+* @head: A pointer to a pointer 
+* @n: The int that store a new node
+* Return:returns NULL if function fail
+*         Otherwise - a pointer to the new node.
+*/
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node = malloc(sizeof(listint_t));
