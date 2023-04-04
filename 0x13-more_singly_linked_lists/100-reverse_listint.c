@@ -17,5 +17,5 @@ current = next;
 }
 
 *head = previous;
-return previous;
+return (previous);
 }
