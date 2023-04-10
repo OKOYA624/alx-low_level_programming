@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
-* clear_bit - Sets the value 
-* @number: A pointer 
-* @number_position: The pos
-* Return: 1 on success
+* set_bit - Sets the value of a bit at a given position to 1.
+*
+* @digit: A pointer to the number to modify.
+* @position: The position of the bit to set to 1.
+*
+* Return: 1 on success, or -1 on failure.
 */
-int clear_bit(unsigned long int *number, unsigned int number_position)
+int set_bit(unsigned long int *digit, unsigned int position)
 {
-	if (number_position > 63)
+	if (position > 63)
 		return (-1);
 
-	*number &= ~(1UL << number_position);
+	*digit |= (1UL << position);
 	return (1);
 }
+
