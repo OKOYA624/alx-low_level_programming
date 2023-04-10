@@ -1,9 +1,8 @@
-#include "holberton.h"
 #include <stdio.h>
-
+#include "main.h"
 /**
 * binary_to_uint - Converts
-* @b: A pointer to a string 
+* @b: A pointer to a string
 * Return: The converted number
 */
 unsigned int binary_to_uint(const char *b)
