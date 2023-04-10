@@ -1,26 +1,24 @@
 #include "main.h"
+
 /**
-* binary_to_uint - Converts
-* @b: A pointer to a string
-* Return: The converted number
+* binary_to_uint - converts
+* @b: string
+* Return: the changed number
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dig = 0;
-	int n;
+	unsigned int digit;
+	unsigned int answer  = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	for (n = 0; b[n] != '\0'; n++)
+	for (digit = 0; b[digit]; digit++)
 	{
-		if (b[n] == '0')
-			dig = dig << 1;
-		else if (b[n] == '1')
-			dig = (dig << 1) | 1;
-		else
+		if (b[digit] < '0' || b[digit] > '1')
 			return (0);
+		answer = 2 * answer + (b[digit] - '0');
 	}
 
-	return (dig);
+	return (answer);
 }
