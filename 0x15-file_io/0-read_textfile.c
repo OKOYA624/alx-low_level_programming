@@ -1,30 +1,32 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
-* printout - Read text file and print to STDOUT.
-* @filename: Name of the file to be read.
-* @alphabets: Number of characters to be read.
-*
-* Return: On success, the total number of characters written.
-*         On error, 0.
+* create_file - Creates a file.
+* @filename: A pointer to the name of the file to create.
+* @text_content: A pointer to a string to write to the file.
+* Return: If the function fails -1
 */
-ssize_t printout(const char *filename, size_t alphabets)
+int create_file(const char *filename, char *text_content)
 {
-	char *buff;
-	ssize_t file_descriptor, write_count, read_count;
+	int description, write_ret, l = 0;
 
-	file_descriptor = open(filename, O_RDONLY);
-	if (file_descriptor == -1)
-		return (0);
+	if (filename == NULL)
+		return (-1);
 
-	buff = malloc(sizeof(char) * alphabets);
-	read_count = read(file_descriptor, buff, alphabets);
-	write_count = write(STDOUT_FILENO, buff, read_count);
+	if (text_content != NULL)
+	{
+		while (text_content[l])
+			l++;
+	}
 
-	free(buff);
-	close(file_descriptor);
+	description = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	write_ret = write(description, text_content, l);
 
-	return (write_count);
+	if (description == -1 || write_ret == -1)
+		return (-1);
+
+	close(description);
+
+	return (1);
 }
 
