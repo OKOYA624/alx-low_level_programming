@@ -7,7 +7,7 @@ void close_file(int fd);
 
 /**
 * create_buffer - Allocates 1024 bytes for a buffer.
-* @file: The name of the file buffer 
+* @file: The name of the file buffer
 * Return: A pointer to the newly-allocated buffer.
 */
 char *create_buffer(char *file)
@@ -46,9 +46,9 @@ void close_file(int fd)
 /**
 * main - Copies the contents of a file to another file.
 * @argc: The number of arguments supplied to the program.
-* @argv: An array of pointers 
+* @argv: An array of pointers
 * Return: 0 on success.
-* Description: If the argument count is incorrect 
+* Description: If the argument count is incorrect
 */
 int main(int argc, char *argv[])
 {
